@@ -6,7 +6,17 @@ namespace _034
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.SetWindowSize(40, 30);
+            Console.SetBufferSize(40, 30);
+            Draw(2, 3, '*');
+
+            Console.ReadKey();
+        }
+
+        static void Draw(int x,int y,char c)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(c);
         }
     }
 }
